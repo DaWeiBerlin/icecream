@@ -1,0 +1,70 @@
+$c:center;
+$w:white;
+
+@import './../../../../styles.scss';
+
+@mixin padding($px:32px){ //default parameter steht hinter dem Doppelpunkt
+    padding:$px;
+}
+
+nav{
+    position: $a;
+    top: 0px;
+    width: calc(100% - 64px);
+    @include padding("32px"); //Parameter der übergeben wird steht in der include Funktion
+    display: flex;
+    justify-content: space-between;
+    >img{
+        width: 64px;
+        height: 64px;
+    }
+    >div{
+        width: 400px;
+        display: flex;
+        >div{
+            >img{
+                width: 20px;
+                height: 20px;
+            }
+            >a{
+                text-decoration: none;
+                color: $w;
+                padding-left: 20px;
+                &:hover{
+                    color: red;
+                }
+            }
+
+        }
+        >a{
+            text-decoration: none;
+            color: $w;
+            padding-right: 20px;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+    >a{
+        text-decoration: none;
+        color: $w;
+        &:nth-child(1){
+            background-color: blue;
+        }
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+.phone_btn{
+    display: flex;
+    >img{
+        width: 64px;
+        height: 64px;
+    }
+    >a{
+        text-decoration: none;
+        color: $w;
+    }
+}

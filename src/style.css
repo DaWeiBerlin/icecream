@@ -1,0 +1,45 @@
+$main-color: #f98184;
+
+h1{
+   color: $main-color;
+}
+    
+#head{
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+}
+
+body{
+    color: $main-color;
+    &:img{
+        width: 100px;
+        height: 40px;
+    }
+    &:div{
+        cursor: pointer;
+    }
+}
+
+#roundCircle{
+    border-radius: 50%;
+    background-color: #f98184;
+    position: absolute;
+    bottom: 0;
+    right: 20vw;
+}
+
+#bg{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 20vw;
+}
+
+
+    
+
+
+

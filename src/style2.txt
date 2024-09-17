@@ -1,0 +1,47 @@
+$c: #f98184
+
+
+@mixin rightCorner()
+    position: absolute
+    bottom: 0
+    right: 20vw
+
+@mixin circle($size,$radius)
+    width: $size
+    height: $size
+    background-color: $c
+    border-radius: $radius
+
+
+h1 
+    color: $c
+
+
+#head 
+    display: flex
+    justify-content: center
+    width: 100vw
+    position: absolute
+    top: 20px
+
+
+body 
+    color: $c
+    height: 100vh
+    overflow: hidden
+
+
+body img 
+    width: 100px
+    height: 40px
+
+
+#roundCircle 
+    @circle(40vw,50%)
+    @include rightCorner()
+    box-shadow: 0 0 5px
+
+
+#bg 
+    width: 40vw
+    @include rightCorner()
